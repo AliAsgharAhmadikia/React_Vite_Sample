@@ -1,0 +1,335 @@
+@import "../css/index.css";/*# sourceMappingURL=main.css.map */
+@import url(../fonts/fontawesome-free-6.2.0-web/css/all.min.css);
+/* @import url(../fonts/fontawesome-free-6.2.0-web/css/); */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+@import url(../fonts/web-fonts/css/fontiran.css);
+
+
+html,body{
+ margin: 0;
+ padding: 0;
+
+}
+/* input:focus{
+    border-top:0 ;
+    border-left: 0;
+    border-right: 0;
+}
+input:active{
+    border-top:0 ;
+    border-left: 0;
+    border-right: 0;
+} */
+input{
+    outline: none;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+  }
+  input[type="number"]:hover,
+  input[type="number"]:focus {
+    -moz-appearance: number-input;
+  }
+  input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+
+#tbl {
+  overflow-x: scroll;
+  border-collapse: collapse;
+}
+
+.tbl {
+  overflow-x: scroll;
+  border-collapse: collapse;
+}
+.modal {
+  font-family: arial;
+}
+
+.modal {
+  position: fixed;
+  width: 40%;
+  margin-left:auto;
+  margin-right: auto;
+  z-index: 1040;
+  top: 5%;
+  left: 30%;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  margin-bottom: 50px;
+
+}
+.backdrop {
+  position: fixed;
+  z-index: 1040;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  opacity: 0.5;
+overflow-y: auto;
+max-height: 100%;
+}
+.modalRoom {
+  position: absolute;
+  width: 40%;
+  margin-left:auto;
+  margin-right: auto;
+  z-index: 1040;
+  top: 5%;
+  left: 30%;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  margin-bottom: 50px;
+  overflow-y: scroll;
+
+  max-height: 100%;
+}
+.modalGroupEdit {
+  position: fixed;
+  width: 80%;
+  margin-left:auto;
+  margin-right: auto;
+  z-index: 1040;
+  top: 5%;
+  left: 10%;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  margin-bottom: 50px;
+  overflow-y: auto;
+  max-height: 100%;
+}
+.datePicker{
+  height:100px
+}
+@media only screen and (max-width: 600px){
+  .modal {
+    position: fixed;
+    width: 90%;
+    margin-left:auto;
+    margin-right: auto;
+    z-index: 1040;
+    top: 10%;
+    left: 5%;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    margin-bottom: 50px;
+    overflow-y: scroll;
+  }
+  .modalGroupEdit {
+   
+    position: fixed;
+    width: 90%;
+    margin-left:auto;
+    margin-right: auto;
+    z-index: 1040;
+    top: 5%;
+    left: 5%;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    margin-bottom: 50px;
+    overflow-y: scroll;
+  }
+  
+}
+p {
+  font-family: IRANSans;
+}
+@keyframes openMenu{
+  0%{
+    opacity: 0;
+    margin-left: 0;
+    margin-right: 0;
+    height:100px;
+  }
+  100%{
+    opacity:1 ;
+    margin-left: auto;
+    margin-right: auto;
+  height:400px;
+  overflow-x: auto;
+  }
+}
+@keyframes closeMenu{
+  0%{
+    opacity: 1;
+    margin-left: 0;
+    margin-right: 0;
+    height:400px;
+  }
+  100%{
+    opacity:0 ;
+    margin-left: auto;
+    margin-right: auto;
+  height:22px;
+  overflow-x: auto;
+  }
+}
+@keyframes drop{
+  0%{
+    opacity: 0;   
+    
+  }
+  100%{
+    opacity:1 ;
+    
+  }
+}
+@keyframes nerkh{
+  0%{
+    opacity: 0; 
+    height: 0;  
+  }
+  50%{
+    opacity: 0;
+  }
+  100%{
+    opacity:1 ;
+    height: 80px;  
+  }
+}
+@keyframes nerkhMob{
+  0%{
+    opacity: 0; 
+    height: 0;  
+  }
+  100%{
+    opacity:1 ;
+    height: 175px;  
+  }
+}
+@keyframes eghamati{
+  0%{
+    opacity: 0; 
+    height: 0;  
+    
+  }
+  50%{
+    opacity: 0;
+  }
+  100%{
+    opacity:1 ;
+    height: 170px;  
+  
+  }
+}
+@keyframes eghamatiMob{
+  0%{
+    opacity: 0; 
+    height: 0;  
+    
+  }
+  100%{
+    opacity:1 ;
+    height: 420px;  
+    
+  }
+}
+@keyframes payam{
+  0%{
+    opacity: 0; 
+    height: 0;  
+    
+  }
+  50%{
+    opacity: 0;
+  }
+  100%{
+    opacity:1 ;
+    height: 80px;  
+  }
+}
+@keyframes payamMob{
+  0%{
+    opacity: 0; 
+    height: 0;  
+    
+  }
+  100%{
+    opacity:1 ;
+    height: 100px;  
+  }
+}
+@keyframes mali{
+  0%{
+    opacity: 0; 
+    height: 0;  
+    
+  }
+  50%{
+    opacity: 0;
+  }
+  100%{
+    opacity:1 ;
+    height: 80px;  
+  }
+}
+@keyframes maliMob{
+  0%{
+    opacity: 0; 
+    height: 0;   
+  }
+  100%{
+    opacity:1 ;
+    height: 125px;  
+  }
+}
+
+.nerkhOpen{
+  animation: nerkh 1s forwards;
+}
+.nerkhMobOpen{
+  animation: nerkhMob 2s forwards;
+}
+.eghamatiOpen{
+  animation: eghamati 1s forwards;
+}
+.eghamatiMobOpen{
+  animation: eghamatiMob 2s forwards;
+}
+.payamOpen{
+  animation: payam 1s forwards;
+}
+.payamMobOpen{
+  animation: payamMob 2s forwards;
+}
+.maliOpen{
+  animation: mali 1s forwards;
+}
+.maliMobOpen{
+  animation: maliMob 2s forwards;
+}
+
+.menuOpen{
+  animation: openMenu 2s forwards;
+}
+.menuClose{
+  animation: closeMenu 2s forwards;
+}
+.dropMenu{
+  animation: drop 2s forwards;
+}
+
+.header {
+  background-image: linear-gradient(to bottom, #410987 , #170131);
+}
+::-webkit-scrollbar {
+  display: none;
+}
